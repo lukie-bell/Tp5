@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form <form method="post" action="index.js" enctype="multipart/form-data">
+        <fieldset>
+            <legend>inicia tu perfil</legend>
+            
+            <label for="nom">Nombre</label>
+            <input type="text" size="20" name="nom" required>
+            <br>
+            <label for="cont">contaseña</label>
+            <input type="password" size="18" name="cont" required>
+            <br>
+            <label for="DNI">DNI  </label>
+            <input type="text" size="20" name="DNI" maxlength="8" required>
+        </fieldset>
+        <label for="Fperfil">incluir foto de perfil</label>
+        <input type="file" name="Fperfil" disabled>
+
+        <fieldset>
+            <legend>datos personles</legend>
+            <label for="gen">genero</label>
+            <br>
+            <input type="radio" name="gen" id="mujer" checked>
+            <label for="mujer">mujer</label>
+            <input type="radio" name="gen" id="hombre">
+            <label for="hombre">hombre</label>
+            <br>
+            <label for="pais">pais</label>
+            <select name="pais">
+                <option value="arg">argentina</option>
+                <option value="cl">chile</option>
+                <option value="ur">uruguay</option>
+                <option value="br">brasil</option>
+            </select>
+        </fieldset>
+        preguntas inesesarias <br> 
+        <label for="pref">¿que prefieres?</label>
+        <br>
+        <input type="checkbox" name="pref" id="cOnline">
+        <label for="cOnline">casino online</label>
+        <br>
+        <input type="checkbox" name="pref" id="cTrad">
+        <label for="cTrad">casino tradicional(presencial)</label>
+        <br>
+        <label for="why">¿porque?</label> <br>
+        <textarea name="why" id="why" cols="20" rows="10">yo prefiero...</textarea>
+        <br>
+        <input type="submit" name="check" value="Enviar datos">
+        <input type="reset" name="check" value="resetiar">
+        <br>
+        <p style="font-size:medium;">en este casino no nos hacemos cargo de los trastornos que le puedan ocurrir </p>
+        <br> 
+        SIGUENOS EN NUESTRAS REDES <br>
+        <input type="image" src="img/descarga.png" height="50" width="50" readonly>
+        <input type="image" src="img/ig.jpeg" height="50" width="50" readonly>
+    </form>
+</body>
+</html>
